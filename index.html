@@ -47,7 +47,20 @@
   }
   .logo span { color: var(--accent); }
 
-  .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+  .nav-right { display: flex; align-items: center; gap: 1rem; }
+
+  .nav-link {
+    color: var(--plum);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    transition: background 0.2s;
+  }
+  .nav-link:hover {
+    background: var(--blush);
+  }
 
   .cart-btn {
     position: relative; background: var(--plum); color: white;
@@ -298,6 +311,7 @@
 <nav>
   <div class="logo">Lumi<span>è</span>re</div>
   <div class="nav-right">
+    <a class="nav-link" href="blog.html">Skincare Blog</a>
     <button class="cart-btn" onclick="openCart()">
       🛒 Cart <span class="cart-count" id="cartCount">0</span>
     </button>
@@ -309,6 +323,7 @@
   <p class="hero-eyebrow">New Collection · 2025</p>
   <h1>Beauty that feels <em>like you</em></h1>
   <p>Curated cosmetics for every skin tone and texture — crafted with intention.</p>
+  <p style="margin-top: 1rem;"><a href="blog.html" style="display:inline-block; padding:0.7rem 1.1rem; border-radius:999px; background:rgba(255,255,255,0.16); color:white; text-decoration:none; border:1px solid rgba(255,255,255,0.2);">Explore skincare blog →</a></p>
 </section>
 
 <!-- FILTERS -->
